@@ -23,6 +23,10 @@ section {
     top: 5rem;
 }
 
+.menuBtn {
+    display: none;
+}
+
 .header {
     display: flex;
     align-items: center;
@@ -126,4 +130,33 @@ button i {
 .about-container .about-text .about-btn:hover {
     background-color: #333;
     transition: .3s;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .header .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding: 10px;
+        background-color: #333;
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        display: none;
+    }
+
+    #openMenu {
+        display: flex;
+        cursor: pointer;
+    }
+
+    .about .about-container {
+        flex-direction: column-reverse;
+        margin-top: 20px;
+    }
 }
